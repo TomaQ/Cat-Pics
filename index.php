@@ -16,7 +16,7 @@ mysql_close($con);
 <html>
 <head>
 
-<title> Random Cats </title>
+<title>Random Cats</title>
 
 <script src = '//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
 <script>
