@@ -16,7 +16,9 @@ mysql_close($con);
 <html>
 <head>
 
-<title>Random Cats</title>
+<title> Random Cats </title>
+
+<link rel="stylesheet" type="text/css" href="style.css">
 
 <script src = '//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
 <script>
@@ -32,11 +34,12 @@ $(document).ready(function()
 });
 
 </script>
+
 </head>
 	<body>
-
-	<div align = "center">
-		<img src = "<?php echo mysql_result($url, 0, "urls"); ?>" id = "catID" height = 600 />
+	
+	<div style = "text-align:center;">
+		<img src = "<?php echo mysql_result($url, 0, "urls"); ?>" id = "catID" height = 600 border ="5" />
 		<br>
 		<button type = "button" id = "newCat" > New pic </button>
 	</div>
