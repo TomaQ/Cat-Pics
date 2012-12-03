@@ -20,7 +20,7 @@ foreach($imgur['data'] as $img)
 	$imgUrl = "http://i.imgur.com/" . $img['hash'] . $img['ext'];
 	mysql_query("INSERT IGNORE INTO catURLS (urls) SELECT '$imgUrl'") or die(mysql_error());
 }
-//mysql_query("INSERT INRO ");
+
 $url = mysql_query("SELECT urls FROM catURLS ORDER BY RAND() LIMIT 1");
 
 mysql_close($con);
